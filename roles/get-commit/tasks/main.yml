@@ -1,0 +1,9 @@
+---
+- name: Get latest commit message 
+  shell: "git log --pretty=\"%s\" -n1"
+  args:
+    chdir: "/srv/repos/lita-slack-jira-hockeyapp-mode"
+  register: latest_commit_message
+- debug:
+    msg: "{{ latest_commit_message }}"
+    
