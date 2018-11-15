@@ -11,5 +11,5 @@ fi
 DIR="$( dirname "${BASH_SOURCE[0]}" )"
 echo $DIR
 pushd $DIR
-$ANSIBLE_PLAYBOOK -i "localhost," -c local test.yml > /srv/repos/test-commit.log
+$ANSIBLE_PLAYBOOK -i "localhost," -c local test.yml > /tmp/test-commit.log
 popd
