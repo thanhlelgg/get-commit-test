@@ -7,5 +7,5 @@
 - debug:
     msg: "{{ latest_commit_message }}"
 - debug:
-    var: "{{ latest_commit_message.stdout }}"
+    var: latest_commit_message.stdout
     
